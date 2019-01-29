@@ -38,6 +38,29 @@ import { LabguardianpuzzleComponent } from './castle/labguardianpuzzle/labguardi
 import { LabbookpuzzleComponent } from './castle/labbookpuzzle/labbookpuzzle.component';
 import { LabcombinepuzzleComponent } from './castle/labcombinepuzzle/labcombinepuzzle.component';
 import { LabpotionComponent } from './castle/labpotion/labpotion.component';
+import { SpaceroomComponent } from './space/spaceroom/spaceroom.component';
+import { SpaceroompuzzleComponent } from './space/spaceroompuzzle/spaceroompuzzle.component';
+import { ControlcenterComponent } from './space/controlcenter/controlcenter.component';
+import { NavigationroomComponent } from './space/navigationroom/navigationroom.component';
+import { Navigationpuzzle1Component } from './space/navigationpuzzle1/navigationpuzzle1.component';
+import { Navigationroom2Component } from './space/navigationroom2/navigationroom2.component';
+import { Navigationpuzzle2Component } from './space/navigationpuzzle2/navigationpuzzle2.component';
+import { Navigationroom3Component } from './space/navigationroom3/navigationroom3.component';
+import { Navigationpuzzle3Component } from './space/navigationpuzzle3/navigationpuzzle3.component';
+import { NavigationsuccessComponent } from './space/navigationsuccess/navigationsuccess.component';
+import { Dataroom1Component } from './space/dataroom1/dataroom1.component';
+import { Dataroom2Component } from './space/dataroom2/dataroom2.component';
+import { Dataroom3Component } from './space/dataroom3/dataroom3.component';
+import { Datapuzzle1Component } from './space/datapuzzle1/datapuzzle1.component';
+import { Datapuzzle2Component } from './space/datapuzzle2/datapuzzle2.component';
+import { Datapuzzle3Component } from './space/datapuzzle3/datapuzzle3.component';
+import { DatasuccessComponent } from './space/datasuccess/datasuccess.component';
+import { EngineroomComponent } from './space/engineroom/engineroom.component';
+import { Fixpartpuzzle1Component } from './space/fixpartpuzzle1/fixpartpuzzle1.component';
+import { Fixpartpuzzle2Component } from './space/fixpartpuzzle2/fixpartpuzzle2.component';
+import { Fixpartpuzzle3Component } from './space/fixpartpuzzle3/fixpartpuzzle3.component';
+import { EnginerepairedComponent } from './space/enginerepaired/enginerepaired.component';
+import { CaptainsroomComponent } from './space/captainsroom/captainsroom.component';
 
 const routes: Routes = [
   { path: 'house', component:  HouseComponent, children: [
@@ -56,7 +79,7 @@ const routes: Routes = [
     { path: 'shed', component: ShedComponent},
   ] },
   { path: 'castle', component: CastleComponent, children: [
-    {path: 'tower', component: TowerComponent },
+    { path: 'tower', component: TowerComponent },
     { path: 'towerpuzzle', component: TowerpuzzleComponent },
     { path: 'mainroom', component: MainroomComponent },
     { path: 'hallway', component: HallwayComponent },
@@ -80,7 +103,29 @@ const routes: Routes = [
     { path: 'labpotion', component: LabpotionComponent },
   ] },
   { path: 'space', component: SpaceComponent, children: [
-    
+    { path: 'spaceroom', component: SpaceroomComponent },
+    { path: 'spaceroompuzzle', component: SpaceroompuzzleComponent },
+    { path: 'controlcenter', component: ControlcenterComponent },
+    { path: 'navigationroom', component: NavigationroomComponent },
+    { path: 'navigationpuzzle1', component: Navigationpuzzle1Component },
+    { path: 'navigationroom2', component: Navigationroom2Component },
+    { path: 'navigationpuzzle2', component: Navigationpuzzle2Component },
+    { path: 'navigationroom3', component: Navigationroom3Component },
+    { path: 'navigationpuzzle3', component: Navigationpuzzle3Component },
+    { path: 'navigationsuccess', component: NavigationsuccessComponent },
+    { path: 'dataroom1', component: Dataroom1Component },
+    { path: 'dataroom2', component: Dataroom2Component },
+    { path: 'dataroom3', component: Dataroom3Component },
+    { path: 'datapuzzle1', component: Datapuzzle1Component },
+    { path: 'datapuzzle2', component: Datapuzzle2Component },
+    { path: 'datapuzzle3', component: Datapuzzle3Component },
+    { path: 'datasuccess', component: DatasuccessComponent },
+    { path: 'engineroom', component: EngineroomComponent },
+    { path: 'fixpartpuzzle1', component: Fixpartpuzzle1Component },
+    { path: 'fixpartpuzzle2', component: Fixpartpuzzle2Component },
+    { path: 'fixpartpuzzle3', component: Fixpartpuzzle3Component },
+    { path: 'enginerepaired', component: EnginerepairedComponent },
+    { path: 'captainsroom', component: CaptainsroomComponent },
   ] }
 ];
 
