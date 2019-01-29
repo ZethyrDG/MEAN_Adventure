@@ -1,7 +1,11 @@
 <h3>In the Backyard</h3>
 
 <button [routerLink]="['../frontroom']">Front Room</button>
-<button [routerLink]="['../shed']">Shed</button>
+<button (click)="param(0)">Shed</button>
 
 
+
+<div class="textbox">
+        <p>{{description}}</p>
+    </div>
 <router-outlet></router-outlet>

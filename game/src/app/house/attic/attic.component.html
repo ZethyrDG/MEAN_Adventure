@@ -2,6 +2,10 @@
 
 <button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
+<button (click)="param(0)">Pick up Device</button>
 
+<div class="textbox">
+        <p>{{description}}</p>
+    </div>
 
 <router-outlet></router-outlet>

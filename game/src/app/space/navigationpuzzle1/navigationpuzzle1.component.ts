@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-navigationpuzzle1',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Navigationpuzzle1Component implements OnInit {
 
-  constructor() { }
-
+  constructor(private _httpService: HttpService) { }
+  countries: any;
   ngOnInit() {
+  }
+  getCountryInfo(region){
+    let obs = this._httpService.getCountry(region);
+    obs.subscribe(data => {
+      console.log(data)
+      this.countries = data
+    })
   }
 
 }

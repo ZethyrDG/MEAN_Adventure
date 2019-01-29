@@ -1,6 +1,11 @@
 <h3>In the Kitchen</h3>
 
 <button [routerLink]="['../frontroom']">Front Room</button>
-<button [routerLink]="['../../space/spaceroom']">Clean The Alien Machine</button>
 
+
+<button (click)="param(0)">use sink</button>
+
+<div class="textbox">
+        <p>{{description}}</p>
+    </div>
 <router-outlet></router-outlet>

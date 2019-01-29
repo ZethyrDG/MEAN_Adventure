@@ -2,5 +2,10 @@
 
 <button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
+<button (click)="param(0)">Pick up Med. Arch. book</button>
+<button (click)="param(1)">Pick up language book</button>
 
+<div class="textbox">
+        <p>{{description}}</p>
+    </div>
 <router-outlet></router-outlet>

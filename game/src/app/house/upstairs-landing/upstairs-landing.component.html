@@ -4,8 +4,10 @@
 <button [routerLink]="['../bathroom']">bathroom</button>
 <button [routerLink]="['../masterbedroom']">Master bedroom</button>
 <button [routerLink]="['../mybedroom']">My Bedroom</button>
-<button [routerLink]="['../attic']">attic</button>
+<button (click)="param(0)">attic</button>
 <button [routerLink]="['../frontroom']">Downstairs</button>
 
-
+<div class="textbox">
+        <p>{{description}}</p>
+</div>
 <router-outlet></router-outlet>

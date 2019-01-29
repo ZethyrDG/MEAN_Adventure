@@ -3,5 +3,10 @@
 <button [routerLink]="['../frontroom']">Front Room</button>
 <button [routerLink]="['../backyard']">Secret Passage</button>
 
+<button (click)="param(0)">Check ladders</button>
+<button (click)="param(1)">Check Keys</button>
 
+<div class="textbox">
+        <p>{{description}}</p>
+    </div>
 <router-outlet></router-outlet>
