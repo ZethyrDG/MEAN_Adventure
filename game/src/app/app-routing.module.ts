@@ -126,7 +126,8 @@ const routes: Routes = [
     { path: 'fixpartpuzzle3', component: Fixpartpuzzle3Component },
     { path: 'enginerepaired', component: EnginerepairedComponent },
     { path: 'captainsroom', component: CaptainsroomComponent },
-  ] }
+  ] },
+  { path: '**', redirectTo: '/'}
 ];
 
 @NgModule({

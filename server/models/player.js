@@ -7,7 +7,8 @@ var PlayerSchema = new mongoose.Schema({
    },
    progress: {
        basement: Boolean,
-   }
+   },
+   location: {type: String}
    }, {timestamps:true})
    mongoose.model('Player', PlayerSchema);
    var Player = mongoose.model('Player')

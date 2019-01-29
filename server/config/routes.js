@@ -6,7 +6,7 @@ module.exports = function(app){
     app.get('/api/players', function(request, response) {
         players.getAll(request,response)
     })
-    app.get('/api/players/:id', function(request, response) {
+    app.get('/api/players/:user', function(request, response) {
         players.getOne(request,response)
     })
     app.post('/api/players', function(request, response) {
