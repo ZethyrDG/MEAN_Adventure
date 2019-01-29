@@ -1,17 +1,29 @@
 module.exports = {
-    getAll: function(){
+    getAll: function(request, reponse){
 
     },
-    getOne: function(){
+    getOne: function(request, response){
+        Player.find({username: request.params.user})
+        .then(function(data){
+            response.json(data)
+        })
+        .catch(function(err){
+            response.json(err)
+        })
+    },
+    create: function(request, response){
 
     },
-    create: function(){
-
+    update: function(request, response){
+        Player.findByIdAndUpdate(request.params.id, request.body)
+        .then(function(data){
+            response.json(data)
+        })
+        .catch(function(err){
+            response.json(err)
+        })
     },
-    update: function(){
-
-    },
-    delete: function(){
+    delete: function(request, response){
 
     },
 }

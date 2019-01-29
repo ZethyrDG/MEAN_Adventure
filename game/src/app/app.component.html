@@ -1,6 +1,8 @@
-<div style="text-align:center">
+<div *ngIf="gamestart == 0" style="text-align:center">
   <h1>Welcome to {{ title }}!</h1>
+  <button (click)="onClickParam(0)">New</button><button (click)="onClickParam(1)">Load</button>
 </div>
-
-<button>New</button><button>Load</button><button>Save</button>
 <router-outlet></router-outlet>
+<div *ngIf="gamestart != 0" style="text-align:center">
+<button (click)="onClickParam(2)">Save</button>
+</div>

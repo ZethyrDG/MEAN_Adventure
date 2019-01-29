@@ -56,7 +56,7 @@ const routes: Routes = [
     { path: 'shed', component: ShedComponent},
   ] },
   { path: 'castle', component: CastleComponent, children: [
-    {path: 'tower', component: TowerComponent },
+    { path: 'tower', component: TowerComponent },
     { path: 'towerpuzzle', component: TowerpuzzleComponent },
     { path: 'mainroom', component: MainroomComponent },
     { path: 'hallway', component: HallwayComponent },
@@ -81,7 +81,8 @@ const routes: Routes = [
   ] },
   { path: 'space', component: SpaceComponent, children: [
     
-  ] }
+  ] },
+  { path: '**', redirectTo: '/'}
 ];
 
 @NgModule({
