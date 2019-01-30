@@ -14,6 +14,7 @@ export class CaptainsroomComponent implements OnInit {
   ngOnInit() {
     this.description="You did it! I knew you could! You are a savior to my people! Let me drop you off back home, maybe we could get some icecream on the way"
     this._httpService.user.progress.savedAlien = true;
+    this._httpService.user.progress.spacedone = true;
   }
 
 }

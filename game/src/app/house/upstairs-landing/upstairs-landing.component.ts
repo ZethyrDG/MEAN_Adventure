@@ -12,8 +12,12 @@ export class UpstairsLandingComponent implements OnInit {
   constructor(private _httpService: HttpService, private _router: Router) { }
 
   ngOnInit() {
+    if(this._httpService.user.inventory.aliendevice == false){
       this.description = "You step onto the upstairs landing.  Many rooms to choose from to explore.  You also notice a door to the Attic on the ceiling.  It is high up and out of reach but you hear a faint humming from it."
-    
+    }
+    else{
+      this.description = "You step onto the upstairs landing.  Many rooms to choose from to explore.  You also notice a door to the Attic on the ceiling."
+    }
   }
   param(num){
     if(num == 0){

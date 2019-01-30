@@ -18,8 +18,8 @@ export class LibraryComponent implements OnInit {
   }
   param(num){
     if(num==0){
-      if(this._httpService.user.progress.knight == true){
-        this.description = "You open the book title 'Medieval Architecture', and out falls a key. Its the Basement key!"
+      if(this._httpService.user.progress.knight == true && this._httpService.user.inventory.basementkey == false){
+        this.description = "You open the book titled 'Medieval Architecture', and out falls a key. Its the Basement key!"
         this._httpService.user.inventory.basementkey = true;
       }
       else{
@@ -28,7 +28,7 @@ export class LibraryComponent implements OnInit {
     }
     if(num==1){
       if(this._httpService.user.inventory.aliendevice == true){
-        this.description="You find a translation: 'This teleporter's energy source is too dirty, please clean with H<sup>2</sup>O'"
+        this.description="You find a translation: 'This teleporter's energy source is too dirty, please clean with H2O'"
         this._httpService.user.progress.translate = true;
       }
       else{

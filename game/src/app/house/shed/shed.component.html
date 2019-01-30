@@ -3,7 +3,8 @@
 </p>
 
 <button [routerLink]="['../backyard']">backyard</button>
-<button (click)="param(0)">Grab Hook</button>
+<button [ngClass]="{ 'on': switch1 }" (click)="param(0)">Grab Hook</button>
+<button [ngClass]="{ 'on': switch }" [routerLink]="['../../temple/staircase']">Descend...</button>
 <div class="textbox">
     <p>{{description}}</p>
 </div>

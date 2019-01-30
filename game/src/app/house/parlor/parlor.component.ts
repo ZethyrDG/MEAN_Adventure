@@ -11,8 +11,8 @@ export class ParlorComponent implements OnInit {
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    if(this._httpService.user.progress.myBedroom == false){
-      this.description = "The Parlor is a very fancy looking room.  Not much to do in here. Try not to brake anything"
+    if(this._httpService.user.progress.myBedroom == false || this._httpService.user.progress.knight == true){
+      this.description = "The Parlor is a very fancy looking room.  Not much to do in here. Try not to break anything."
     }
     else if(this._httpService.user.progress.myBedroom == true && this._httpService.user.progress.shed == false){
       this.description = "You see a small suit of armor statue. You do not know what the password is but it seems the knight was recently covered in dirt. Does he like gardening?"

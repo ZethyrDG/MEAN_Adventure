@@ -37,6 +37,7 @@ export class HallwaywandComponent implements OnInit {
     }
     if(type == 1){
       this._httpService.user.progress.savedthewizard = true;
+      this._httpService.user.progress.castledone = true;
       this._router.navigate(['/house/backyard'])
       }
   }

@@ -16,7 +16,7 @@ export class MyBedroomComponent implements OnInit {
       this._httpService.user.progress.myBedroom = true
     }
     else{
-      this.description = "Find the device in the Parlor"
+      this.description = "It's your bedroom. It's kind of a mess. Maybe when you're done adventuring, you should clean up."
     }
     
   }

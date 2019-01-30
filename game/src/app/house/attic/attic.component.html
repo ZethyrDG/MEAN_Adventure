@@ -2,7 +2,7 @@
 
 <button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
-<button (click)="param(0)">Pick up Device</button>
+<button [ngClass]="{ 'on': switch }" (click)="param(0)">Pick up Device</button>
 
 <div class="textbox">
         <p>{{description}}</p>

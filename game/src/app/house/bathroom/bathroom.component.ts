@@ -16,7 +16,7 @@ export class BathroomComponent implements OnInit {
   }
   param(num){
     if(num==0){
-      if(this._httpService.user.progress.translate==true){
+      if(this._httpService.user.progress.translate==true && this._httpService.user.progress.savedAlien == false){
         this._router.navigate(['/space/spaceroom'])
       }
       else{

@@ -27,6 +27,8 @@ export class HttpService {
       labpuzzle3: false,
       dungeon: false,
       savedthewizard: false,
+      castledone: false,
+      spacedone: false,
     },
     inventory:{
       hook:false,

@@ -1,7 +1,7 @@
 <h3>In the basement</h3>
 
 <button [routerLink]="['../frontroom']">Front Room</button>
-<button [routerLink]="['../../castle/tower']">Teleport!</button>
+<button [ngClass]="{ 'on': switch }" [routerLink]="['../../castle/tower']">Teleport!</button>
 
 <div class="textbox">
     <p>{{description}}</p>
