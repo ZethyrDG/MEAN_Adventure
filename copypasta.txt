@@ -29,3 +29,10 @@ import { Router } from '@angular/router';
 , private _router: Router
 
 this._router.navigate(['/'])
+
+###switch###
+[ngClass]="{ 'on': switch }"
+
+.on{
+    visibility: hidden;
+}

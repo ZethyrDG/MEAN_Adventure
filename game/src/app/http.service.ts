@@ -20,6 +20,7 @@ export class HttpService {
       engine: false,
       data: false,
       savedAlien: false,
+      spacedone: false,
       
       mainroom: false,
       gotwand: false,
@@ -30,7 +31,7 @@ export class HttpService {
       dungeon: false,
       savedthewizard: false,
       castledone: false,
-      spacedone: false,
+      dungeonfail: false,
 
       blueflame: false,
       redflame: false,
@@ -69,5 +70,29 @@ export class HttpService {
   }
   getQ(level, category){
     return this._http.get(`https://opentdb.com/api.php?amount=1&category=${category}&difficulty=${level}&type=multiple`)
+  }
+    getEasyMath(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=19&difficulty=easy&type=multiple')
+  }
+  getMediumMath(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=19&difficulty=medium&type=multiple')
+  }
+  getEasyMyth(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=20&difficulty=easy&type=multiple')
+  }
+  getMediumMyth(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=20&difficulty=medium&type=multiple')
+  }
+  getEasyScience(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=17&difficulty=easy&type=multiple')
+  }
+  getMediumScience(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=17&difficulty=medium&type=multiple')
+  }
+  getEasyHistory(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=23&difficulty=easy&type=multiple')
+  }
+  getMediumHistory(){
+    return this._http.get('https://opentdb.com/api.php?amount=1&category=23&difficulty=medium&type=multiple')
   }
 }

@@ -1,2 +1,12 @@
 <p>hallwayduel works!</p>
-<button [routerLink] = "['../hallwaywand']">Win the duel</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../hallwaywand']">Continue</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <div *ngFor="let answer of answers; let i = index">
+        <button (click)="onClick(i)" [innerHTML]="answer"></button>
+        <br>
+    </div>
+</div>

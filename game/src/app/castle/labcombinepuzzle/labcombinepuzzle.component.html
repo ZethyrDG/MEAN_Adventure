@@ -1,2 +1,12 @@
 <p>labcombinepuzzle works!</p>
-<button [routerLink] = "['../labpotion']">Get the potion!</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../labpotion']">Get the potion!</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <div *ngFor="let answer of answers; let i = index">
+        <button (click)="onClick(i)" [innerHTML]="answer"></button>
+        <br>
+    </div>
+</div>

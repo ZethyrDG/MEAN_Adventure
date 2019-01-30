@@ -1,2 +1,11 @@
 <p>labguardianpuzzle works!</p>
-<button [routerLink] = "['../lab']">Potion Lab</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../lab']">Look around the lab</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <input type="text" name="answerinput" [(ngModel)]="answer" />
+        <button (click)="onClick()">Guess!</button>
+        <br>
+</div>
