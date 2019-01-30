@@ -10,18 +10,25 @@ export class HttpService {
       frontroom:false,
       myBedroom:false,
       parlor: false,
-
       shed:false,
       knight:false,
       translate:false,
 
+      navigation:false,
+      engine: false,
+      data: false,
+      savedAlien: false,
     },
     inventory:{
       hook:false,
       ladder:false,
       basementkey: false,
       shedkey: false,
-      aliendevice:true
+      aliendevice:false,
+      
+      fixedpart1:false,
+      fixedpart2:false,
+      fixedpart3:false
     }
   };
   constructor(private _http: HttpClient) { }
@@ -33,5 +40,8 @@ export class HttpService {
   }
   getCountry(region){
     return this._http.get('https://restcountries.eu/rest/v2/region/'+ region)
+  }
+  getOneCountry(code){
+    return this._http.get('https://restcountries.eu/rest/v2/alpha/'+code)
   }
 }

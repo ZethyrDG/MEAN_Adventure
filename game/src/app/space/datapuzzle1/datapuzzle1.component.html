@@ -2,4 +2,24 @@
   Doing the first data puzzle
 </h3>
 
-<button [routerLink]="['../dataroom2']">move to the next data room</button>
+
+
+<img src="{{correctCountry.flag}}" alt="">
+<p>What country has this flag?</p>
+
+
+<button (click)="param(0)">Iceland</button>
+<button (click)="param(1)">Denmark</button>
+<button (click)="param(2)">Germany</button>
+<button (click)="param(3)">Spain</button>
+<button (click)="param(4)">Ireland</button>
+
+<p></p>
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+
+
+
+

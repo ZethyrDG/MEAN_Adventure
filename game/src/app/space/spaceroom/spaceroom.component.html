@@ -2,4 +2,11 @@
   In the mysterious room with a window that overlooks earth
 </h3>
 
-<button [routerLink]="['../spaceroompuzzle']">Do the puzzle</button>
+<button [routerLink]="['../spaceroompuzzle']">Try to unlock door</button>
+<button (click)="param(0)">Look out Window</button>
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+
+

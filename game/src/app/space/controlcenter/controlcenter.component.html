@@ -2,8 +2,12 @@
   Control Center of space ship
 </h3>
 
-<button [routerLink]="['../navigationroom']">Fix the navigation</button>
-<button [routerLink]="['../engineroom']">Fix the engine</button>
-<button [routerLink]="['../dataroom1']">Fix the data</button>
+<button (click)="param(1)">Fix the navigation</button>
+<button (click)="param(2)">Fix the engine</button>
+<button (click)="param(3)">Fix the data</button>
 
-<button [routerLink]="['../captainsroom']">Go to the captain</button>
+<button (click)="param(0)">Go to the captain</button>
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>

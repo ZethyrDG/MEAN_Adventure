@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-dataroom2',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dataroom2.component.css']
 })
 export class Dataroom2Component implements OnInit {
-
-  constructor() { }
+  description: String;
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
+    this.description="The screen you were just working on is now fully functional.  The middel screen is now flashing 'DATA CORRUPTED'"
   }
 
 }
