@@ -1,2 +1,12 @@
 <p>dungeonroom1puzzle works!</p>
-<button [routerLink] = "['../dungeonroom2']">Dungeon Room 2</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../dungeonroom2']">Open the door</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <div *ngFor="let answer of answers; let i = index">
+        <button (click)="onClick(i)" [innerHTML]="answer"></button>
+        <br>
+    </div>
+</div>

@@ -1,2 +1,12 @@
 <p>hallwayescapepuzzle works!</p>
-<button [routerLink] = "['../hallwayescape']">Finish puzzle</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../hallwayescape']">Escape the trap!</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <div *ngFor="let answer of answers; let i = index">
+        <button (click)="onClick(i)" [innerHTML]="answer"></button>
+        <br>
+    </div>
+</div>
