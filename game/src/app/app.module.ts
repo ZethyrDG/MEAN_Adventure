@@ -67,6 +67,34 @@ import { Fixpartpuzzle2Component } from './space/fixpartpuzzle2/fixpartpuzzle2.c
 import { Fixpartpuzzle3Component } from './space/fixpartpuzzle3/fixpartpuzzle3.component';
 import { EnginerepairedComponent } from './space/enginerepaired/enginerepaired.component';
 import { CaptainsroomComponent } from './space/captainsroom/captainsroom.component';
+import { TempleComponent } from './temple/temple.component';
+import { StaircaseComponent } from './temple/staircase/staircase.component';
+import { TempleentranceComponent } from './temple/templeentrance/templeentrance.component';
+import { EntrancepuzzleComponent } from './temple/entrancepuzzle/entrancepuzzle.component';
+import { HallsComponent } from './temple/halls/halls.component';
+import { BluebridgeComponent } from './temple/bluebridge/bluebridge.component';
+import { BluebridgepuzzleComponent } from './temple/bluebridgepuzzle/bluebridgepuzzle.component';
+import { BluedoorComponent } from './temple/bluedoor/bluedoor.component';
+import { BluedoorpuzzleComponent } from './temple/bluedoorpuzzle/bluedoorpuzzle.component';
+import { BlueflameComponent } from './temple/blueflame/blueflame.component';
+import { BluepassageComponent } from './temple/bluepassage/bluepassage.component';
+import { RedpassageComponent } from './temple/redpassage/redpassage.component';
+import { RedfireComponent } from './temple/redfire/redfire.component';
+import { RedfirepuzzleComponent } from './temple/redfirepuzzle/redfirepuzzle.component';
+import { RedwindComponent } from './temple/redwind/redwind.component';
+import { RedwindpuzzleComponent } from './temple/redwindpuzzle/redwindpuzzle.component';
+import { RedflameComponent } from './temple/redflame/redflame.component';
+import { PurplepassageComponent } from './temple/purplepassage/purplepassage.component';
+import { PurplefireComponent } from './temple/purplefire/purplefire.component';
+import { PurplefirepuzzleComponent } from './temple/purplefirepuzzle/purplefirepuzzle.component';
+import { PurplesandComponent } from './temple/purplesand/purplesand.component';
+import { PurplesandpuzzleComponent } from './temple/purplesandpuzzle/purplesandpuzzle.component';
+import { PurplewaterComponent } from './temple/purplewater/purplewater.component';
+import { PurplewaterpuzzleComponent } from './temple/purplewaterpuzzle/purplewaterpuzzle.component';
+import { PurpleairComponent } from './temple/purpleair/purpleair.component';
+import { PurpleairpuzzleComponent } from './temple/purpleairpuzzle/purpleairpuzzle.component';
+import { TreasureComponent } from './temple/treasure/treasure.component';
+import { YouwinComponent } from './temple/youwin/youwin.component';
 
 @NgModule({
   declarations: [
@@ -132,7 +160,35 @@ import { CaptainsroomComponent } from './space/captainsroom/captainsroom.compone
     Fixpartpuzzle3Component,
     EnginerepairedComponent,
     CaptainsroomComponent,
-    HallwayescapepuzzleComponent
+    HallwayescapepuzzleComponent,
+    TempleComponent,
+    StaircaseComponent,
+    TempleentranceComponent,
+    EntrancepuzzleComponent,
+    BluebridgeComponent,
+    BluebridgepuzzleComponent,
+    BluedoorComponent,
+    BluedoorpuzzleComponent,
+    BlueflameComponent,
+    BluepassageComponent,
+    RedpassageComponent,
+    RedfireComponent,
+    RedfirepuzzleComponent,
+    RedwindComponent,
+    RedwindpuzzleComponent,
+    RedflameComponent,
+    PurplepassageComponent,
+    PurplefireComponent,
+    PurplefirepuzzleComponent,
+    PurplesandComponent,
+    PurplesandpuzzleComponent,
+    PurplewaterComponent,
+    PurplewaterpuzzleComponent,
+    PurpleairComponent,
+    PurpleairpuzzleComponent,
+    TreasureComponent,
+    YouwinComponent,
+    HallsComponent
   ],
   imports: [
     BrowserModule,

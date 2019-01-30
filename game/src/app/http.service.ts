@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
   user ={
+    username: "",
+    location: "",
     progress:{
       frontroom:false,
       myBedroom:false,
@@ -29,6 +31,9 @@ export class HttpService {
       savedthewizard: false,
       castledone: false,
       spacedone: false,
+
+      blueflame: false,
+      redflame: false,
     },
     inventory:{
       hook:false,
@@ -44,6 +49,9 @@ export class HttpService {
       wand: false,
       potion: false,
       spellbook: false,
+
+      blueflame: false,
+      redflame: false,
     }
   };
   constructor(private _http: HttpClient) { }
