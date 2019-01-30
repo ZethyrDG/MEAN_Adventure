@@ -23,6 +23,7 @@ import { HallwayComponent } from './castle/hallway/hallway.component';
 import { HallwaypuzzleComponent } from './castle/hallwaypuzzle/hallwaypuzzle.component';
 import { HallwaysecretComponent } from './castle/hallwaysecret/hallwaysecret.component';
 import { HallwayescapeComponent } from './castle/hallwayescape/hallwayescape.component';
+import { HallwayescapepuzzleComponent } from './castle/hallwayescapepuzzle/hallwayescapepuzzle.component';
 import { HallwayduelComponent } from './castle/hallwayduel/hallwayduel.component';
 import { HallwaywandComponent } from './castle/hallwaywand/hallwaywand.component';
 import { Dungeonroom1Component } from './castle/dungeonroom1/dungeonroom1.component';
@@ -86,6 +87,7 @@ const routes: Routes = [
     { path: 'hallwaypuzzle', component: HallwaypuzzleComponent },
     { path: 'hallwaysecret', component: HallwaysecretComponent },
     { path: 'hallwayescape', component: HallwayescapeComponent },
+    { path: 'hallwayescapepuzzle', component: HallwayescapepuzzleComponent },
     { path: 'hallwayduel', component: HallwayduelComponent },
     { path: 'hallwaywand', component: HallwaywandComponent },
     { path: 'dungeonroom1', component: Dungeonroom1Component },

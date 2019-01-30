@@ -18,6 +18,15 @@ export class HttpService {
       engine: false,
       data: false,
       savedAlien: false,
+      
+      mainroom: false,
+      gotwand: false,
+      lab: false,
+      labpuzzle1: false,
+      labpuzzle2: false,
+      labpuzzle3: false,
+      dungeon: false,
+      savedthewizard: false,
     },
     inventory:{
       hook:false,
@@ -28,7 +37,11 @@ export class HttpService {
       
       fixedpart1:false,
       fixedpart2:false,
-      fixedpart3:false
+      fixedpart3:false,
+
+      wand: false,
+      potion: false,
+      spellbook: false,
     }
   };
   constructor(private _http: HttpClient) { }

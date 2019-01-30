@@ -1,4 +1,9 @@
 <p>mainroom works!</p>
-<button [routerLink] = "['../hallway']">Hallway</button>
-<button [routerLink] = "['../lab']">Potion Lab</button>
-<button [routerLink] = "['../dungeonroom1']">Dungeon</button>
+<button [ngClass]="{ 'on': switch2 }" [routerLink] = "['../hallway']">Hallway</button>
+<button (click)="onClick(2)">Potion Lab</button>
+<button [ngClass]="{ 'on': switch1 }" (click)="onClick(1)">Dungeon</button>
+<button [ngClass]="{ 'on': switch }" (click)="onClick(0)">Approach the figure</button>
+<button [ngClass]="{ 'on': switch3 }" [routerLink] = "['../hallwaywand']">Go to the wizard's room</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>

@@ -1,2 +1,7 @@
 <p>hallwaywand works!</p>
-<button [routerLink] = "['../mainroom']">Back to main room</button>
+<button [ngClass]="{ 'on': switch }" (click)="onClick(0)">Pick up the wand!</button>
+<button [ngClass]="{ 'on': switch1 }" (click)="onClick(0)">Go back to the main hall</button>
+<button [ngClass]="{ 'on': switch2 }" (click)="onClick(1)">Save the wizard!</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-labpotion',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./labpotion.component.css']
 })
 export class LabpotionComponent implements OnInit {
-
-  constructor() { }
+  description: String;
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
+    this.description = "You've successfully brewed the potion of unsealing!"
+    this._httpService.user.inventory.potion = true;
   }
-
 }
