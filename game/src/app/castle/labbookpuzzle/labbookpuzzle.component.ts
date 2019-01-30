@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-labbookpuzzle',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LabbookpuzzleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
+    this._httpService.user.progress.labpuzzle1 = true;
   }
 
 }

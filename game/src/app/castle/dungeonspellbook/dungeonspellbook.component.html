@@ -1,2 +1,5 @@
 <p>dungeonspellbook works!</p>
-<button [routerLink] = "['../mainroom']">Back to main room</button>
+<button (click)="onClick(0)">Get the book!</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>

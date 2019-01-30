@@ -10,18 +10,29 @@ export class HttpService {
       frontroom:false,
       myBedroom:false,
       parlor: false,
-
       shed:false,
       knight:false,
       translate:false,
 
+      mainroom: false,
+      gotwand: false,
+      lab: false,
+      labpuzzle1: false,
+      labpuzzle2: false,
+      labpuzzle3: false,
+      dungeon: false,
+      savedthewizard: false,
     },
     inventory:{
       hook:false,
       ladder:false,
       basementkey: false,
       shedkey: false,
-      aliendevice:true
+      aliendevice:true,
+
+      wand: false,
+      potion: false,
+      spellbook: false,
     }
   };
   constructor(private _http: HttpClient) { }

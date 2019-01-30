@@ -1,6 +1,9 @@
 <p>lab works!</p>
 <button [routerLink] = "['../mainroom']">Back to main room</button>
-<button [routerLink] = "['../lablockpuzzle']">Potion Lab Lock Puzzle</button>
-<button [routerLink] = "['../labguardianpuzzle']">Potion Lab Guardian Puzzle</button>
-<button [routerLink] = "['../labbookpuzzle']">Potion Lab Book Puzzle</button>
-<button [routerLink] = "['../labcombinepuzzle']">Potion Lab Combine Puzzle</button>
+<button [ngClass]="{ 'on': switch3 }" [routerLink] = "['../lablockpuzzle']">Potion Lab Lock Puzzle</button>
+<button [ngClass]="{ 'on': switch2 }" [routerLink] = "['../labguardianpuzzle']">Potion Lab Guardian Puzzle</button>
+<button [ngClass]="{ 'on': switch1 }" [routerLink] = "['../labbookpuzzle']">Potion Lab Book Puzzle</button>
+<button [ngClass]="{ 'on': switch }" (click)="onClick(0)">Potion Lab Combine Puzzle</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
