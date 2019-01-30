@@ -2,4 +2,27 @@
   Doing the second data puzzle
 </h3>
 
-<button [routerLink]="['../dataroom3']">Fixed the data</button>
+<img src="{{correctCountry.flag}}" alt="flag">
+<p></p>
+<button (click)="param(0)">Panama</button>
+<button (click)="param(1)">Brazil</button>
+<button (click)="param(2)">Chile</button>
+<button (click)="param(3)">Canada</button>
+<button (click)="param(4)">Barbados</button>
+
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+
+
+<p></p>
+<button (click)="getCountryInfo('europe')">europe</button>
+<button (click)="getCountryInfo('americas')">americas</button>
+<button (click)="getCountryInfo('africa')">africa</button>
+<button (click)="getCountryInfo('asia')">asia</button>
+<button (click)="getCountryInfo('oceania')">oceania</button>
+<div class="countrybox" *ngFor="let country of countries">
+    {{country.name}}
+    <img src="{{country.flag}}" alt="flag">
+  </div>

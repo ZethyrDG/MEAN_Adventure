@@ -2,4 +2,16 @@
   Doing the third data puzzle
 </h3>
 
-<button [routerLink]="['../datasuccess']">Finish all the data</button>
+<img src="{{correctCountry.flag}}" alt="flag">
+<p></p>
+<button (click)="param(0)">South Korea</button>
+<button (click)="param(1)">Cambodia</button>
+<button (click)="param(2)">Nepal</button>
+<button (click)="param(3)">U.A.E.</button>
+<button (click)="param(4)">Indonesia</button>
+
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+

@@ -1,5 +1,13 @@
-<h3>
-  Doing the third navigation puzzle
-</h3>
+<h5>Correct answers: {{count}}</h5>
+<h3 [innerHTML]="oneQ[0].question"></h3>
+<p></p>
 
-<button [routerLink]="['../navigationsuccess']">completed the third puzzle</button>
+<div *ngFor="let choices of answers">
+  <button (click)="param(choices)" [innerHTML]="choices"></button>
+</div>
+
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+
+<button *ngIf="count>4" [routerLink]="['../navigationsuccess']">completed the third puzzle</button>

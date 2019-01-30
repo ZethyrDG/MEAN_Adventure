@@ -1,9 +1,15 @@
-<h3>
-  doing the puzzle 
-</h3>
 
-<button [routerLink]="['../controlcenter']">go through door</button>
+
+<h3 [innerHTML]="oneQ[0].question"></h3>
+<p></p>
+
+<div *ngFor="let choices of answers">
+  <button (click)="param(choices)" [innerHTML]="choices"></button>
+</div>
 
 <div class="textbox">
     <p>{{description}}</p>
 </div>
+
+
+<button *ngIf="count>0" [routerLink]="['../controlcenter']">go through door</button>

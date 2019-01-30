@@ -1,6 +1,7 @@
-img{
-    width: 50px;
-}
-.countrybox{
-    background-color: grey;
+.textbox{
+    width: 400px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }

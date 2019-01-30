@@ -67,4 +67,7 @@ export class HttpService {
   getOneCountry(code){
     return this._http.get('https://restcountries.eu/rest/v2/alpha/'+code)
   }
+  getQ(level, category){
+    return this._http.get(`https://opentdb.com/api.php?amount=1&category=${category}&difficulty=${level}&type=multiple`)
+  }
 }

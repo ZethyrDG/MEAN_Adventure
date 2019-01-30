@@ -2,9 +2,18 @@
   Doing the third engine puzzle
 </h3>
 
-<button (click)="param(0)">Part is repaired</button>
+<h5>Correct answers: {{count}}</h5>
 
+<h3 [innerHTML]="oneQ[0].question"></h3>
+<p></p>
+
+<div *ngFor="let choices of answers">
+  <button (click)="param(choices)" [innerHTML]="choices"></button>
+</div>
 
 <div class="textbox">
     <p>{{description}}</p>
 </div>
+
+
+<button *ngIf="count>4"  (click)="param(0)">Part is repaired</button>

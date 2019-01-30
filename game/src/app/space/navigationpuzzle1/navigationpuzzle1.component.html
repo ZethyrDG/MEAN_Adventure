@@ -1,19 +1,22 @@
-<h3>
-  Doing the first navigation puzzle
-</h3>
 
 
-<button (click)="getCountryInfo('europe')">europe</button>
-<button (click)="getCountryInfo('americas')">americas</button>
-<button (click)="getCountryInfo('africa')">africa</button>
-<button (click)="getCountryInfo('asia')">asia</button>
-<button (click)="getCountryInfo('oceania')">oceania</button>
+<h3 [innerHTML]="oneQ[0].question"></h3>
+<p></p>
+<div *ngFor="let choices of answers">
+    <button (click)="param(choices)" [innerHTML]="choices"></button>
+  </div>
+  
+  <div class="textbox">
+      <p>{{description}}</p>
+  </div>
 
-<div class="countrybox" *ngFor="let country of countries">
-  {{country.name}}
-  <img src="{{country.flag}}" alt="flag">
-</div>
 
 <p></p>
 
-<button [routerLink]="['../navigationroom2']">move to the next navigation room</button>
+<button *ngIf="count>0" [routerLink]="['../navigationroom2']">move to the next navigation room</button>
+
+
+
+
+
+
