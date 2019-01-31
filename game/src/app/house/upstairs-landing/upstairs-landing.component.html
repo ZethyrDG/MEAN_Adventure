@@ -1,12 +1,12 @@
 <h3>On the Upstairs landing</h3>
 <img *ngIf="imgSwap == false" src="./assets/img/upstairs-landing.png" alt="upstairsimg">
 <img *ngIf="imgSwap == true" src="./assets/img/upstairs-landing-ladder.png" alt="upstairsimg2">
-<button [routerLink]="['../library']">library</button>
-<button [routerLink]="['../bathroom']">bathroom</button>
-<button [routerLink]="['../masterbedroom']">Master bedroom</button>
-<button [routerLink]="['../mybedroom']">My Bedroom</button>
-<button (click)="param(0)">attic</button>
-<button [routerLink]="['../frontroom']">Downstairs</button>
+<button class="library" [routerLink]="['../library']">library</button>
+<button class="bathroom" [routerLink]="['../bathroom']">bathroom</button>
+<button class="master" [routerLink]="['../masterbedroom']">Master bedroom</button>
+<button class="mybedroom" [routerLink]="['../mybedroom']">My Bedroom</button>
+<button class="attic" (click)="param(0)">attic</button>
+<button class="downstairs" [routerLink]="['../frontroom']">Downstairs</button>
 
 <div class="textbox">
         <p>{{description}}</p>

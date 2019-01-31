@@ -8,3 +8,20 @@
 .on{
     visibility: hidden;
 }
+img{
+    width: 800px;
+}
+.device{
+    position: absolute;
+    left:400px;
+    top: 590px;
+}
+.upstairs{
+    position: absolute;
+    left:130px;
+    top: 660px;
+}
+button{
+    background-image: linear-gradient( rgb(154, 226, 187), rgb(32, 172, 95));
+    border-radius: 3px;
+}

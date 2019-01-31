@@ -14,7 +14,7 @@ export class AppComponent {
   onClickParam(type){
     if(type == 0){
       this.gamestart = 1;
-      this._router.navigate(['/house/frontroom']);
+      // this._router.navigate(['/house/frontroom']);  //put back in when all buttons have been placed
     }
     if(type == 1){
       let user = window.prompt("Please enter your username");

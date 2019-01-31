@@ -7,7 +7,7 @@ span{
 .inventory{
     min-width: 50px;
     outline: 3px solid black;
-    /* height: 50px; */
+    height: 41px;
     
 }
 .item{

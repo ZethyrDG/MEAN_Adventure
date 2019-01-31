@@ -5,3 +5,40 @@
     border-radius: 5px;
     padding: 5px;
 }
+img{
+    width: 800px;
+}
+.library{
+    position: absolute;
+    left:380px;
+    top: 340px;
+}
+.bathroom{
+    position: absolute;
+    left:610px;
+    top: 390px;
+}
+.master{
+    position: absolute;
+    left:750px;
+    top: 500px;
+}
+.mybedroom{
+    position: absolute;
+    left:113px;
+    top: 370px;
+}
+.attic{
+    position: absolute;
+    left:350px;
+    top: 180px;
+}
+.downstairs{
+    position: absolute;
+    left:350px;
+    top: 650px;
+}
+button{
+    background-image: linear-gradient( rgb(154, 226, 187), rgb(32, 172, 95));
+    border-radius: 3px;
+}

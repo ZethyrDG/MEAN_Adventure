@@ -1,13 +1,13 @@
 <div class="container">
     <h3>In the Front Room</h3>
     <img src="./assets/img/front-room.png" alt="frontroomimg">
-    <button [routerLink]="['../parlor']">Parlor</button>
-    <button [routerLink]="['../kitchen']">kitchen</button>
-    <button [routerLink]="['../garage']">garage</button>
-    <button [routerLink]="['../backyard']">backyard</button>
-    <button [routerLink]="['../upstairslanding']">Upstairs</button>
+    <button class="parlor" [routerLink]="['../parlor']">Parlor</button>
+    <button class="kitchen" [routerLink]="['../kitchen']">kitchen</button>
+    <button class="garage" [routerLink]="['../garage']">garage</button>
+    <button class="backyard" [routerLink]="['../backyard']">backyard</button>
+    <button class="upstairs" [routerLink]="['../upstairslanding']">Upstairs</button>
 
-    <button (click)="param(0)" >basement</button>
+    <button class="basement" (click)="param(0)" >basement</button>
 
     <div class="textbox">
         <p>{{description}}</p>

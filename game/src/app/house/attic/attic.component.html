@@ -1,9 +1,9 @@
 <h3>In the Attic</h3>
 <img *ngIf="imgSwap == false" src="./assets/img/attic.png" alt="atticimg">
 <img *ngIf="imgSwap == true" src="./assets/img/attic-devicegone.png" alt="atticimg2">
-<button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
+<button class="upstairs" [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
-<button [ngClass]="{ 'on': switch }" (click)="param(0)">Pick up Device</button>
+<button class="device" [ngClass]="{ 'on': switch }" (click)="param(0)">Pick up Device</button>
 
 <div class="textbox">
         <p>{{description}}</p>

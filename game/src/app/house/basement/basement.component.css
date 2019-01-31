@@ -8,3 +8,20 @@
 .on{
     visibility: hidden;
 }
+img{
+    width: 800px;
+}
+.frontroom{
+    position: absolute;
+    left:140px;
+    top: 312px;
+}
+.portal{
+    position: absolute;
+    left:530px;
+    top: 490px;
+}
+button{
+    background-image: linear-gradient( rgb(154, 226, 187), rgb(32, 172, 95));
+    border-radius: 3px;
+}

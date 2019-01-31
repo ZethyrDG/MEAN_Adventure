@@ -8,3 +8,40 @@
 .container{
     outline: 1px dotted red;
 }
+img{
+    width: 800px;
+}
+.parlor{
+    position: absolute;
+    left:15px;
+    top: 610px;
+}
+.kitchen{
+    position: absolute;
+    left:550px;
+    top: 660px;
+}
+.garage{
+    position: absolute;
+    left:380px;
+    top: 420px;
+}
+.backyard{
+    position: absolute;
+    left:620px;
+    top: 420px;
+}
+.upstairs{
+    position: absolute;
+    left:30px;
+    top: 350px;
+}
+.basement{
+    position: absolute;
+    left:180px;
+    top: 660px;
+}
+button{
+    background-image: linear-gradient( rgb(154, 226, 187), rgb(32, 172, 95));
+    border-radius: 3px;
+}
