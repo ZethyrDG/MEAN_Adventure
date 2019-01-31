@@ -1,9 +1,9 @@
 <h3>In the Kitchen</h3>
+<img src="./assets/img/kitchen.png" alt="kitchenimg">
+<button class="frontroom" [routerLink]="['../frontroom']">Front Room</button>
 
-<button [routerLink]="['../frontroom']">Front Room</button>
 
-
-<button (click)="param(0)">use sink</button>
+<button class="sink" (click)="param(0)">use sink</button>
 
 <div class="textbox">
         <p>{{description}}</p>

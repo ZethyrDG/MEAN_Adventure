@@ -4,6 +4,30 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.backyard{
+    position: absolute;
+    left:400px;
+    top: 650px;
+}
+.hook{
+    position: absolute;
+    left:660px;
+    top: 463px;
+}
+.temple{
+    position: absolute;
+    left:300px;
+    top: 550px;
+}
+button{
+    background-image: linear-gradient( rgb(174, 200, 255), rgb(98, 147, 253));
+    border-radius: 3px;
 }
 .on{
     visibility: hidden;

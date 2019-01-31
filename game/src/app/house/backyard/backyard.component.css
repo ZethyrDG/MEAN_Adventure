@@ -4,4 +4,23 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.shed{
+    position: absolute;
+    left:170px;
+    top: 300px;
+}
+.frontroom{
+    position: absolute;
+    left:720px;
+    top: 670px;
+}
+button{
+    background-image: linear-gradient( rgb(174, 200, 255), rgb(98, 147, 253));
+    border-radius: 3px;
 }

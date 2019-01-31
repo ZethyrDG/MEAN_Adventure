@@ -4,12 +4,14 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
-}
-.on{
-    visibility: hidden;
+    margin-left: 200px;
 }
 img{
     width: 800px;
+    border: 2px solid gray;
+}
+.on{
+    visibility: hidden;
 }
 .device{
     position: absolute;

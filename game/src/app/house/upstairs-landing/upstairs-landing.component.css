@@ -4,13 +4,15 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
 }
 img{
     width: 800px;
+    border: 2px solid gray;
 }
 .library{
     position: absolute;
-    left:380px;
+    left:400px;
     top: 340px;
 }
 .bathroom{
@@ -20,8 +22,8 @@ img{
 }
 .master{
     position: absolute;
-    left:750px;
-    top: 500px;
+    left:707px;
+    top: 550px;
 }
 .mybedroom{
     position: absolute;

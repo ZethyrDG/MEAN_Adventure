@@ -1,8 +1,8 @@
 <h3>In the Bathroom</h3>
+<img src="./assets/img/bathroom.png" alt="bathroomimg">
+<button class="upstairs" [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
-<button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
-
-<button (click)="param(0)">Use Sink</button>
+<button class="sink" (click)="param(0)">Use Sink</button>
 
 <div class="textbox">
     <p>{{description}}</p>

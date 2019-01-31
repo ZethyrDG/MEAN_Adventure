@@ -1,10 +1,12 @@
 <p>
   At the shed
 </p>
-
-<button [routerLink]="['../backyard']">backyard</button>
-<button [ngClass]="{ 'on': switch1 }" (click)="param(0)">Grab Hook</button>
-<button [ngClass]="{ 'on': switch }" [routerLink]="['../../temple/staircase']">Descend...</button>
+<img *ngIf="imgSwap == 0" src="./assets/img/shed.png" alt="shedimg">
+<img *ngIf="imgSwap == 1" src="./assets/img/shed-nohook.png" alt="shedimg2">
+<img *ngIf="imgSwap == 2" src="./assets/img/shed-templeopen.png" alt="shedimg3">
+<button class="backyard" [routerLink]="['../backyard']">backyard</button>
+<button class="hook" [ngClass]="{ 'on': switch1 }" (click)="param(0)">Grab Hook</button>
+<button class="temple" [ngClass]="{ 'on': switch }" [routerLink]="['../../temple/staircase']">Descend...</button>
 <div class="textbox">
     <p>{{description}}</p>
 </div>

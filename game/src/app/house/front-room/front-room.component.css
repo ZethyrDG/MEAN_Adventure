@@ -4,12 +4,11 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
-}
-.container{
-    outline: 1px dotted red;
+    margin-left: 200px;
 }
 img{
     width: 800px;
+    border: 2px solid gray;
 }
 .parlor{
     position: absolute;
