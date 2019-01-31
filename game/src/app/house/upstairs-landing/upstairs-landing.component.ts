@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class UpstairsLandingComponent implements OnInit {
   description: String;
+  imgSwap: Boolean = false;
   constructor(private _httpService: HttpService, private _router: Router) { }
 
   ngOnInit() {
@@ -17,6 +18,7 @@ export class UpstairsLandingComponent implements OnInit {
     }
     else{
       this.description = "You step onto the upstairs landing.  Many rooms to choose from to explore.  You also notice a door to the Attic on the ceiling."
+      this.imgSwap = true;
     }
   }
   param(num){

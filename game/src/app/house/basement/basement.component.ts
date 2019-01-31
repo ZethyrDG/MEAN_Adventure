@@ -9,6 +9,7 @@ import { HttpService } from '../../http.service';
 export class BasementComponent implements OnInit {
   description: String;
   switch: boolean = false;
+  imgSwap: Boolean = false;
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
@@ -18,6 +19,7 @@ export class BasementComponent implements OnInit {
     if(this._httpService.user.progress.savedthewizard == true){
       this.description = "The basement leaves no evidence that anything out of the ordinary happened here."
       this.switch = true;
+      this.imgSwap = true;
     }
   }
 

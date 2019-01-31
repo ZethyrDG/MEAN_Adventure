@@ -9,6 +9,7 @@ import { HttpService } from '../../http.service';
 export class AtticComponent implements OnInit {
   description: String;
   switch: Boolean = false;
+  imgSwap: Boolean = false;
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
@@ -18,6 +19,7 @@ export class AtticComponent implements OnInit {
     else{
       this.description = "There's nothing of interest in the dusty old attic."
       this.switch = true;
+      this.imgSwap = true;
     }
   }
   param(num){
@@ -25,6 +27,7 @@ export class AtticComponent implements OnInit {
       this.description = "You pick up the Device which ejects a marble sized sphere and says a message you cannot understand. Maybe you could research foreign languages?"
       this._httpService.user.inventory.aliendevice = true;
       this.switch = true;
+      this.imgSwap = true;
     }
   }
 }
