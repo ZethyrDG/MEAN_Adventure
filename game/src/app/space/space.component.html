@@ -1,5 +1,14 @@
-<p>
-  On the Spaceship
-</p>
+
+
+<div class="container">
+    <p>On the Spaceship</p>
+
+<div class="inventory">
+    <div *ngFor="let item of allItems | keyvalue" class="item">
+            <pre *ngIf="item.value" >{{item.key}}, </pre>
+    </div>
+</div>
 
 <router-outlet></router-outlet>
+</div>
+

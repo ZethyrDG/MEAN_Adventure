@@ -26,6 +26,9 @@ export class EngineroomComponent implements OnInit {
     if(num==0){
       if(this._httpService.user.inventory.fixedpart1==true && this._httpService.user.inventory.fixedpart2==true && this._httpService.user.inventory.fixedpart3==true){
         this._router.navigate(['/space/enginerepaired'])
+        this._httpService.user.inventory.fixedpart1=false
+        this._httpService.user.inventory.fixedpart2=false
+        this._httpService.user.inventory.fixedpart3=false
       }
       else{
         this.description="You need to repair all three parts before you combine them!"

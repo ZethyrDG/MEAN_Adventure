@@ -1,3 +1,13 @@
-<h3>At the House</h3>
+<div class="container">
+    <h3>At the House</h3>
+    
+    <div class="inventory">
+        <div *ngFor="let item of allItems | keyvalue" class="item">
+                <pre *ngIf="item.value" >{{item.key}}, </pre>
+        </div>
+    </div>
+    
+    
 
-<router-outlet></router-outlet>
+    <router-outlet ></router-outlet>
+</div>

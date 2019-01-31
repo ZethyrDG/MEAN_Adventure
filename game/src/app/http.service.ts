@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpService {
+  
   user ={
     username: "",
     location: "",
@@ -95,4 +96,5 @@ export class HttpService {
   getMediumHistory(){
     return this._http.get('https://opentdb.com/api.php?amount=1&category=23&difficulty=medium&type=multiple')
   }
+  
 }

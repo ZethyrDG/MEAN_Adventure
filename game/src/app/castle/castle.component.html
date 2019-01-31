@@ -1,2 +1,14 @@
-<p>castle works!</p>
-<router-outlet></router-outlet>
+
+
+<div class="container">
+        <p>castle works!</p>
+    
+    <div class="inventory">
+        <div *ngFor="let item of allItems | keyvalue" class="item">
+                <pre *ngIf="item.value" >{{item.key}}, </pre>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>
+

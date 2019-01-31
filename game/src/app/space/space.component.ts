@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-space',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./space.component.css']
 })
 export class SpaceComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private _httpService: HttpService) { }
+  allItems= this._httpService.user.inventory;
   ngOnInit() {
+    console.log(this.allItems)
   }
 
 }

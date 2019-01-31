@@ -15,7 +15,7 @@ export class ControlcenterComponent implements OnInit {
     if(this._httpService.user.progress.navigation == false && this._httpService.user.progress.engine == false && this._httpService.user.progress.data == false){
       this.description = "You step out into an amazing control center of an alien space ship. A small green alien comes up to you and says in an excited voice, 'You solved the door puzzle! you must be very smart! please help me, I am stranded after collecting data for my people so we can better understand you and live in peace. Please use your great intellegence to help me get home. The navigation is broken, some engine parts need repairing, and the data I collected needs sorting. I'll be in my captain's quarters. come get me when you are done! Thank you!'"
     }
-    if(this._httpService.user.progress.navigation == true && this._httpService.user.progress.engine == true && this._httpService.user.progress.data == true){
+    else if(this._httpService.user.progress.navigation == true && this._httpService.user.progress.engine == true && this._httpService.user.progress.data == true){
       this.description = "You repaired everything! Hurry go tell the captain, he'll be so excited!"
     }
     else{

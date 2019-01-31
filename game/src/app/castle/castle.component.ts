@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-castle',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CastleComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _httpService: HttpService) { }
+  allItems= this._httpService.user.inventory;
   ngOnInit() {
+    console.log(this.allItems)
   }
 
 }

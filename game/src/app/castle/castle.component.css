@@ -1,0 +1,15 @@
+.container{
+    outline: 1px dotted green;
+}
+span{
+    display: inline-block;
+}
+.inventory{
+    min-width: 50px;
+    outline: 3px solid black;
+    /* height: 50px; */
+    
+}
+.item{
+    display: inline-block;
+}
