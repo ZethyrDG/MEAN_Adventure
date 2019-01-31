@@ -11,7 +11,7 @@ export class PurplesandComponent implements OnInit {
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    this.description = "The fire shuts off, and you make your way into the next room. This time, the floor is covered in sand, but it doesn't look like ordinary sand. This is quicksand! You'll need to find a way across. This time, a voice rings out, demanding an answer..."
+    this.description = "You make your way into the next room. This time, the floor is covered in sand, but it doesn't look like ordinary sand. This is quicksand! You'll need to find a way across. This time, a voice rings out, demanding an answer..."
     
   }
 }

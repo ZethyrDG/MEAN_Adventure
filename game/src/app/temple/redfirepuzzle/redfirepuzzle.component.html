@@ -1,2 +1,11 @@
 <p>redfirepuzzle works!</p>
-<button [routerLink] = "['../halls']">Solve the puzzle</button>
+<button [ngClass]="{ 'on': switch }" [routerLink] = "['../halls']">Return to the halls</button>
+<div class="textbox">
+    <p>{{description}}</p>
+</div>
+<div [ngClass]="{ 'on': switch1 }">
+    <p [innerHTML]="question"></p>
+    <input type="text" name="answerinput" [(ngModel)]="answer" />
+        <button (click)="onClick()">Guess!</button>
+        <br>
+</div>
