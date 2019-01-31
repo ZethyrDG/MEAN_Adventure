@@ -1,12 +1,12 @@
 <h3>
   Control Center of space ship
 </h3>
+<img src="./assets/img/controlroom.png" alt="controlroomimg">
+<button class="nav" (click)="param(1)">To Navigation Room</button>
+<button class="engine" (click)="param(2)">To Engine Room</button>
+<button class="data" (click)="param(3)">To Data Room</button>
 
-<button (click)="param(1)">Fix the navigation</button>
-<button (click)="param(2)">Fix the engine</button>
-<button (click)="param(3)">Fix the data</button>
-
-<button (click)="param(0)">Go to the captain</button>
+<button class="captain" (click)="param(0)">Go to the Captain</button>
 
 <div class="textbox">
     <p>{{description}}</p>
