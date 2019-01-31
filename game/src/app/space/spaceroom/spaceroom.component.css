@@ -13,12 +13,12 @@ img{
 .door{
     position: absolute;
     left:270px;
-    top: 440px;
+    top: 370px;
 }
 .window{
     position: absolute;
-    left:630px;
-    top: 610px;
+    left:644px;
+    top: 494px;
 }
 button{
     background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));

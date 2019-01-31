@@ -13,22 +13,22 @@ img{
 .nav{
     position: absolute;
     left:100px;
-    top: 150px;
+    top: 175px;
 }
 .engine{
     position: absolute;
     left:178px;
-    top: 284px;
+    top: 309px;
 }
 .data{
     position: absolute;
     left:640px;
-    top: 315px;
+    top: 340px;
 }
 .captain{
     position: absolute;
     left:360px;
-    top: 260px;
+    top: 285px;
 }
 button{
     background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));

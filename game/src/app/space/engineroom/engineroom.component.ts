@@ -13,10 +13,10 @@ export class EngineroomComponent implements OnInit {
 
   ngOnInit() {
     if(this._httpService.user.inventory.fixedpart1==false && this._httpService.user.inventory.fixedpart2==false && this._httpService.user.inventory.fixedpart3==false){
-      this.description="You enter a room with a lot of machinery. You see three small machines that are labeled, 'Please Repair and combine'"
+      this.description="You enter a room with a lot of machinery. You see three small machines that are labeled, 'Please Repair and restart computer'"
     }
     else if(this._httpService.user.inventory.fixedpart1==true && this._httpService.user.inventory.fixedpart2==true && this._httpService.user.inventory.fixedpart3==true){
-      this.description="You fixed the three parts! Hurry and put them all together"
+      this.description="You fixed the three parts! Hurry and restart the computer"
     }
     else{
       this.description="Good job! Keep it going!"
@@ -31,12 +31,12 @@ export class EngineroomComponent implements OnInit {
         this._httpService.user.inventory.fixedpart3=false
       }
       else{
-        this.description="You need to repair all three parts before you combine them!"
+        this.description="You need to repair all three parts before you restart the computer!"
       }
     }
     if(num==1){
       if(this._httpService.user.inventory.fixedpart1==true){
-        this.description="You have repaired this part already! Try another or combine the repaired parts"
+        this.description="You have repaired this part already! Try another or restart the computer"
       }
       else{
         this._router.navigate(['/space/fixpartpuzzle1'])
@@ -44,7 +44,7 @@ export class EngineroomComponent implements OnInit {
     }
     if(num==2){
       if(this._httpService.user.inventory.fixedpart2==true){
-        this.description="You have repaired this part already! Try another or combine the repaired parts"
+        this.description="You have repaired this part already! Try another or restart the computer"
       }
       else{
         this._router.navigate(['/space/fixpartpuzzle2'])
@@ -52,7 +52,7 @@ export class EngineroomComponent implements OnInit {
     }
     if(num==3){
       if(this._httpService.user.inventory.fixedpart3==true){
-        this.description="You have repaired this part already! Try another or combine the repaired parts"
+        this.description="You have repaired this part already! Try another or restart the computer"
       }
       else{
         this._router.navigate(['/space/fixpartpuzzle3'])

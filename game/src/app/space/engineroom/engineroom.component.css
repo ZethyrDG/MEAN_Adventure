@@ -4,4 +4,38 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.control{
+    position: absolute;
+    left:540px;
+    top: 666px;
+}
+.part1{
+    position: absolute;
+    left:20px;
+    top: 350px;
+}
+.part2{
+    position: absolute;
+    left:255px;
+    top: 625px;
+}
+.part3{
+    position: absolute;
+    left:326px;
+    top: 315px;
+}
+.finish{
+    position: absolute;
+    left:700px;
+    top: 440px;
+}
+button{
+    background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));
+    border-radius: 3px;
 }

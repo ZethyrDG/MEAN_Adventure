@@ -4,4 +4,18 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.control{
+    position: absolute;
+    left:619px;
+    top: 286px;
+}
+button{
+    background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));
+    border-radius: 3px;
 }

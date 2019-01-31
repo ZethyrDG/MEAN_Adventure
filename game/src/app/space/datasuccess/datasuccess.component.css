@@ -13,7 +13,7 @@ img{
 .control{
     position: absolute;
     left:380px;
-    top: 339px;
+    top: 360px;
 }
 button{
     background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));

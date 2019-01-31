@@ -1,13 +1,13 @@
 <h3>
   In the Engine Room
 </h3>
+<img src="./assets/img/engineroom.png" alt="engineroomimg">
+<button class="control" [routerLink]="['../controlcenter']">back to control room</button>
 
-<button [routerLink]="['../controlcenter']">back to control room</button>
-
-<button (click)="param(1)">Fix the first part</button>
-<button (click)="param(2)">Fix the second part</button>
-<button (click)="param(3)">Fix the third part</button>
-<button (click)="param(0)">Put it all together</button>
+<button class="part1" (click)="param(1)">Fix dangling chords</button>
+<button class="part2" (click)="param(2)">Fix spinning machine</button>
+<button class="part3" (click)="param(3)">Fix connected orbs</button>
+<button class="finish" (click)="param(0)">Restart Computer</button>
 
 <div class="textbox">
     <p>{{description}}</p>

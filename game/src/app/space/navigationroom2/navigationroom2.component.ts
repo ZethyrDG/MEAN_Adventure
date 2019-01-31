@@ -11,7 +11,7 @@ export class Navigationroom2Component implements OnInit {
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    this.description="You continue on and in the next room see another warning message. 'Door to go even further is currently unavailable,please resolve error to move forward'"
+    this.description="You continue on and arrive in a room that looks just like the first. Another computer is flashing a warning message. 'Door to go even further is currently unavailable,please resolve error to move forward'"
   }
 
 }

@@ -13,7 +13,7 @@ img{
 .data{
     position: absolute;
     left:17px;
-    top: 376px;
+    top: 350px;
 }
 button{
     background-image: linear-gradient( rgb(159, 216, 199), rgb(69, 207, 166));
