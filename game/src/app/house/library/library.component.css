@@ -5,3 +5,25 @@
     border-radius: 5px;
     padding: 5px;
 }
+img{
+   width :800px;
+}
+.medArch{
+    position: absolute;
+    left:170px;
+    top: 365px;
+}
+.language{
+    position: absolute;
+    left:110px;
+    top: 490px;
+}
+.upstairs{
+    position: absolute;
+    left:650px;
+    top: 650px;
+}
+button{
+    background-image: linear-gradient( rgb(174, 200, 255), rgb(98, 147, 253));
+    border-radius: 3px;
+}

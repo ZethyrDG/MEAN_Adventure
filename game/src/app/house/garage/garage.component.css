@@ -5,3 +5,25 @@
     border-radius: 5px;
     padding: 5px;
 }
+img{
+    width: 800px;
+}
+.frontroom{
+    position: absolute;
+    left:25px;
+    top: 500px;
+}
+.ladder{
+    position: absolute;
+    left:530px;
+    top: 640px;
+}
+.keys{
+    position: absolute;
+    left:113px;
+    top: 450px;
+}
+button{
+    background-image: linear-gradient( rgb(174, 200, 255), rgb(98, 147, 253));
+    border-radius: 3px;
+}

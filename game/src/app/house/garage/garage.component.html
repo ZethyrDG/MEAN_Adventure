@@ -1,10 +1,13 @@
 <h3>In Garage</h3>
+<img *ngIf="imgSwap == 0" src="./assets/img/garage.png" alt="upstairsimg">
+<img *ngIf="imgSwap == 1" src="./assets/img/garage-nokey.png" alt="upstairsimg2">
+<img *ngIf="imgSwap == 2" src="./assets/img/garage-noladder.png" alt="upstairsimg2">
+<img *ngIf="imgSwap == 3" src="./assets/img/garage-nokeynoladder.png" alt="upstairsimg2">
+<button class="frontroom" [routerLink]="['../frontroom']">Front Room</button>
 
-<button [routerLink]="['../frontroom']">Front Room</button>
-<button [routerLink]="['../backyard']">Secret Passage</button>
 
-<button (click)="param(0)">Check ladders</button>
-<button (click)="param(1)">Check Keys</button>
+<button class="ladder" (click)="param(0)">Check ladders</button>
+<button class="keys" (click)="param(1)">Check Keys</button>
 
 <div class="textbox">
         <p>{{description}}</p>

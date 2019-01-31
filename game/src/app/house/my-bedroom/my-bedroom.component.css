@@ -5,3 +5,15 @@
     border-radius: 5px;
     padding: 5px;
 }
+img{
+    width: 800px;
+}
+.upstairs{
+    position: absolute;
+    left: 510px;
+    top: 720px;
+}
+button{
+    background-image: linear-gradient( rgb(174, 200, 255), rgb(98, 147, 253));
+    border-radius: 3px;
+}

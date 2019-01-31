@@ -1,6 +1,7 @@
 <h3>In the Parlor</h3>
-
-<button [routerLink]="['../frontroom']">Front Room</button>
+<img *ngIf="imgSwap == false" src="./assets/img/parlor.png" alt="upstairsimg">
+<img *ngIf="imgSwap == true" src="./assets/img/parlor-password.png" alt="upstairsimg2">
+<button class="frontroom" [routerLink]="['../frontroom']">Front Room</button>
 
 <div class="textbox">
         <p>{{description}}</p>

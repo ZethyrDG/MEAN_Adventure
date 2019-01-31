@@ -1,9 +1,9 @@
 <h3>In the Library</h3>
+<img  src="./assets/img/library.png" alt="upstairsimg">
+<button class="upstairs" [routerLink]="['../upstairslanding']">Upstairs Landing</button>
 
-<button [routerLink]="['../upstairslanding']">Upstairs Landing</button>
-
-<button (click)="param(0)">Pick up Med. Arch. book</button>
-<button (click)="param(1)">Pick up language book</button>
+<button class="medArch" (click)="param(0)">Medieval Architecture book</button>
+<button class="language" (click)="param(1)">Language book</button>
 
 <div class="textbox">
         <p>{{description}}</p>
