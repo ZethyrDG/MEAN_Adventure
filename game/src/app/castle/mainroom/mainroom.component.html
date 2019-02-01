@@ -1,5 +1,6 @@
 <p>Main Castle Room</p>
-<img src="./assets/img/mainroom.png" alt="mainroomimg">
+<img *ngIf="imgSwap == false"  src="./assets/img/mainroom2.png" alt="mainroomimg">
+<img *ngIf="imgSwap == true"  src="./assets/img/mainroom.png" alt="mainroomimg">
 <button class="hall" [ngClass]="{ 'on': switch2 }" [routerLink] = "['../hallway']">Hallway</button>
 <button class="potion" (click)="onClick(2)">Potion Lab</button>
 <button class="dungeon" [ngClass]="{ 'on': switch1 }" (click)="onClick(1)">Dungeon</button>

@@ -13,12 +13,14 @@ export class MainroomComponent implements OnInit {
   switch1: boolean = false;
   switch2: boolean = false;
   switch3: boolean = true;
+  imgSwap: Boolean = false;
   constructor(private _httpService: HttpService, private _router: Router) { }
 
   ngOnInit() {
     if(this._httpService.user.progress.mainroom == true && this._httpService.user.inventory.wand == false){
       this.description = "You've returned to the great hall."
       this.switch = true
+      this.imgSwap = true
     }
     if(this._httpService.user.progress.mainroom == false){
       this.description = "You've successfully opened the door and escaped the tower! Heading downstairs and into what could only be described as a great hall, you are greeted by a partially faded figure that beckons you over."
@@ -27,18 +29,21 @@ export class MainroomComponent implements OnInit {
     if(this._httpService.user.inventory.wand == true && this._httpService.user.progress.gotwand == true){
       this.description = "You've returned to the great hall."
       this.switch = true
+      this.imgSwap = true
       this.switch3 = false;
       this.switch2 = true;
     }
     if(this._httpService.user.inventory.wand == true && this._httpService.user.progress.gotwand == false){
       this.description = "After picking up the wand, you go through the secret door, down the hallway, and end up back in the main hall"
       this.switch = true
+      this.imgSwap = true
       this.switch3 = false;
       this.switch2 = true;
       this._httpService.user.progress.gotwand = true
     }
     if(this._httpService.user.progress.dungeon == true){
       this.switch1 == true;
+      this.imgSwap = true
     }
   }
   onClick(type){
