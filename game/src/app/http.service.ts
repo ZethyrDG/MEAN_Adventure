@@ -60,6 +60,9 @@ export class HttpService {
   getOne(user){
     return this._http.get(`/api/players/${user}`)
   }
+  create(obj){
+    return this._http.post('/api/players', obj)
+  }
   update(obj){
     return this._http.put(`/api/players/${obj._id}`, obj)
   }
