@@ -19,6 +19,6 @@ module.exports = function(app){
         players.delete(request,response)
     })
     app.all("*", function(request, response){
-        response.sendFile(path.resolve("./public/dist/public/index.html"))
+        response.redirect("/")
     })
 }

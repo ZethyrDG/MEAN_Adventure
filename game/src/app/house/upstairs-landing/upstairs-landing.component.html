@@ -3,7 +3,7 @@
 <img *ngIf="imgSwap == true" src="./assets/img/upstairs-landing-ladder.png" alt="upstairsimg2">
 <button class="library" [routerLink]="['../library']">library</button>
 <button class="bathroom" [routerLink]="['../bathroom']">bathroom</button>
-<button class="master" [routerLink]="['../masterbedroom']">Master bedroom</button>
+<button class="master" (click)="param(1)">Master bedroom</button>
 <button class="mybedroom" [routerLink]="['../mybedroom']">My Bedroom</button>
 <button class="attic" (click)="param(0)">attic</button>
 <button class="downstairs" [routerLink]="['../frontroom']">Downstairs</button>
