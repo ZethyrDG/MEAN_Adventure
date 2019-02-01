@@ -1,5 +1,8 @@
-<p>dungeonroom3puzzle works!</p>
-<button [ngClass]="{ 'on': switch }" [routerLink] = "['../dungeonspellbook']">Dispel the barrier</button>
+<p>Dungeon Spellbook</p>
+<img *ngIf="life == 3" src="./assets/img/dungeonspellbook.png" alt="dungeonimg">
+<img *ngIf="life == 2" src="./assets/img/dungeonspellbook1.png" alt="dungeonimg">
+<img *ngIf="life == 1" src="./assets/img/dungeonspellbook2.png" alt="dungeonimg">
+<button class="barrier" [ngClass]="{ 'on': switch }" [routerLink] = "['../dungeonspellbook']">Dispel the barrier</button>
 <div class="textbox">
     <p>{{description}}</p>
 </div>

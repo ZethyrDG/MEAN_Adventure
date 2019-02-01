@@ -4,6 +4,30 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.wand{
+    position: absolute;
+    left: 50px;
+    top: 635px;
+}
+.main{
+    position: absolute;
+    left: 50px;
+    top: 635px;
+}
+.save{
+    position: absolute;
+    left: 150px;
+    top: 635px;
+}
+button{
+    background-image: linear-gradient( rgb(250, 215, 162), rgb(202, 157, 31));
+    border-radius: 3px;
 }
 .on{
     visibility: hidden;

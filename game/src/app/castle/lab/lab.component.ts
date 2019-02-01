@@ -13,6 +13,7 @@ export class LabComponent implements OnInit {
   switch1: boolean = false;
   switch2: boolean = false;
   switch3: boolean = false;
+  imgSwap: boolean = false;
   constructor(private _httpService: HttpService, private _router: Router) { }
 
   ngOnInit() {
@@ -21,6 +22,7 @@ export class LabComponent implements OnInit {
     }
     if(this._httpService.user.progress.labpuzzle2 == true){
       this.switch2 = true;
+      this.imgSwap = true;
     }
     if(this._httpService.user.progress.labpuzzle3 == true){
       this.switch3 = true;
@@ -28,6 +30,7 @@ export class LabComponent implements OnInit {
     if(this._httpService.user.progress.labpuzzle1 == true && this._httpService.user.progress.labpuzzle2 == true && this._httpService.user.progress.labpuzzle3 == true && this._httpService.user.inventory.potion == false){
       this.description = "You have everything you need to brew the potion of unsealing! Time to combine them all!"
       this.switch = false;
+      this.imgSwap = true;
     }
     if(this._httpService.user.inventory.potion == true && this.switch == true){
       this.description = "You've brewed the potion of unsealing, and have no further need of anything in this room."
