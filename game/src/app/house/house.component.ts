@@ -14,5 +14,4 @@ export class HouseComponent implements OnInit {
     console.log(this.allItems)
   }
   
-  
 }
