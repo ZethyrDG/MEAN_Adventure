@@ -5,7 +5,7 @@ span{
     display: inline-block;
 }
 .inventory{
-    min-width: 50px;
+    width: 800px;
     outline: 3px solid black;
     height: 41px;
     
