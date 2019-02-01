@@ -36,5 +36,8 @@ export class UpstairsLandingComponent implements OnInit {
         this.description="the attic door is way to high for you, maybe you can find something to help you reach"
       }
     }
+    if(num==1){
+      this.description = "Hmm, it seems like your parents locked the door. They probably have the key. There's no way in to this room."
+    }
   }
 }

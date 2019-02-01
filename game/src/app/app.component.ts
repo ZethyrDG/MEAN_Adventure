@@ -16,6 +16,7 @@ export class AppComponent {
     if(type == 0){
       let user = window.prompt("Please enter a new username")
       this._httpService.user.username = user
+      this._httpService.user.location = "/house/frontroom"
       let observe = this._httpService.create(this._httpService.user)
       observe.subscribe(data => {
         if(data.errmsg != undefined){
