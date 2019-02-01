@@ -1,9 +1,10 @@
-<p>lab works!</p>
-<button [routerLink] = "['../mainroom']">Back to main room</button>
-<button [ngClass]="{ 'on': switch3 }" [routerLink] = "['../lablockpuzzle']">Cupboard of Ingredients</button>
-<button [ngClass]="{ 'on': switch2 }" [routerLink] = "['../labguardianpuzzle']">Potion making tools</button>
-<button [ngClass]="{ 'on': switch1 }" [routerLink] = "['../labbookpuzzle']">Potion recipe book</button>
-<button [ngClass]="{ 'on': switch }" (click)="onClick(0)">Brew the potion!</button>
+<p>Potions Lab!</p>
+<img src="./assets/img/lab.png" alt="engineroomimg">
+<button class="main" [routerLink] = "['../mainroom']">Back to main room</button>
+<button class="cupboard" [ngClass]="{ 'on': switch3 }" [routerLink] = "['../lablockpuzzle']">Cupboard of Ingredients</button>
+<button class="tools" [ngClass]="{ 'on': switch2 }" [routerLink] = "['../labguardianpuzzle']">Potion making tools</button>
+<button class="book" [ngClass]="{ 'on': switch1 }" [routerLink] = "['../labbookpuzzle']">Potion recipe book</button>
+<button class="combine" [ngClass]="{ 'on': switch }" (click)="onClick(0)">Brew the potion!</button>
 <div class="textbox">
     <p>{{description}}</p>
 </div>

@@ -1,9 +1,10 @@
-<p>mainroom works!</p>
-<button [ngClass]="{ 'on': switch2 }" [routerLink] = "['../hallway']">Hallway</button>
-<button (click)="onClick(2)">Potion Lab</button>
-<button [ngClass]="{ 'on': switch1 }" (click)="onClick(1)">Dungeon</button>
-<button [ngClass]="{ 'on': switch }" (click)="onClick(0)">Approach the figure</button>
-<button [ngClass]="{ 'on': switch3 }" [routerLink] = "['../hallwaywand']">Go to the wizard's room</button>
+<p>Main Castle Room</p>
+<img src="./assets/img/mainroom.png" alt="mainroomimg">
+<button class="hall" [ngClass]="{ 'on': switch2 }" [routerLink] = "['../hallway']">Hallway</button>
+<button class="potion" (click)="onClick(2)">Potion Lab</button>
+<button class="dungeon" [ngClass]="{ 'on': switch1 }" (click)="onClick(1)">Dungeon</button>
+<button class="figure" [ngClass]="{ 'on': switch }" (click)="onClick(0)">Approach the figure</button>
+<button class="wizard" [ngClass]="{ 'on': switch3 }" [routerLink] = "['../hallwaywand']">Go to the wizard's room</button>
 <div class="textbox">
     <p>{{description}}</p>
 </div>

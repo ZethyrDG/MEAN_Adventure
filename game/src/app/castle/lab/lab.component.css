@@ -4,6 +4,40 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.main{
+    position: absolute;
+    left:200px;
+    top: 640px;
+}
+.cupboard{
+    position: absolute;
+    left:310px;
+    top: 160px;
+}
+.tools{
+    position: absolute;
+    left:145px;
+    top: 400px;
+}
+.book{
+    position: absolute;
+    left:610px;
+    top: 550px;
+}
+.combine{
+    position: absolute;
+    left:45px;
+    top: 350px;
+}
+button{
+    background-image: linear-gradient( rgb(250, 215, 162), rgb(202, 157, 31));
+    border-radius: 3px;
 }
 .on{
     visibility: hidden;

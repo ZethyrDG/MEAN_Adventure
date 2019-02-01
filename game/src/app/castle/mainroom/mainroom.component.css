@@ -4,6 +4,40 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.hall{
+    position: absolute;
+    left:612px;
+    top: 315px;
+}
+.potion{
+    position: absolute;
+    left:75px;
+    top: 315px;
+}
+.dungeon{
+    position: absolute;
+    left:345px;
+    top: 290px;
+}
+.figure{
+    position: absolute;
+    left:470px;
+    top: 605px;
+}
+.wizard{
+    position: absolute;
+    left:572px;
+    top: 315px;
+}
+button{
+    background-image: linear-gradient( rgb(250, 215, 162), rgb(202, 157, 31));
+    border-radius: 3px;
 }
 .on{
     visibility: hidden;

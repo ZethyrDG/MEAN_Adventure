@@ -4,4 +4,18 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 200px;
+}
+img{
+    width: 800px;
+    border: 2px solid gray;
+}
+.door{
+    position: absolute;
+    left:613px;
+    top: 407px;
+}
+button{
+    background-image: linear-gradient( rgb(250, 215, 162), rgb(202, 157, 31));
+    border-radius: 3px;
 }
